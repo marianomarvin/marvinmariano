@@ -10,11 +10,10 @@
   @font-face{font-family:"Bebas Kai";font-display:swap;
     src:url("fonts/BebasKai.woff2") format("woff2"),url("fonts/BebasKai.otf") format("opentype"),url("fonts/BebasKai.ttf") format("truetype")}
   :root{--titres:"Bebas Kai","Bebas Neue",Impact,"Helvetica Neue",Helvetica,Arial,sans-serif}
-  @font-face{font-family:"HNWeb";font-weight:100;font-style:normal;font-display:swap;src:local("HelveticaNeue-Thin"),local("Helvetica Neue Thin"),url("fonts/HelveticaNeueThin.woff2") format("woff2"),url("fonts/HelveticaNeueThin.ttf") format("truetype"),url("fonts/HelveticaNeueThin.otf") format("opentype")}
   @font-face{font-family:"HNWeb";font-weight:200;font-style:normal;font-display:swap;src:local("HelveticaNeue-UltraLight"),local("Helvetica Neue UltraLight"),url("fonts/HelveticaNeueUltraLight.woff2") format("woff2"),url("fonts/HelveticaNeueUltraLight.ttf") format("truetype"),url("fonts/HelveticaNeueUltraLight.otf") format("opentype")}
-  @font-face{font-family:"HNWeb";font-weight:500;font-style:normal;font-display:swap;src:local("HelveticaNeue-Medium"),local("Helvetica Neue Medium"),url("fonts/HelveticaNeueMedium.woff2") format("woff2"),url("fonts/HelveticaNeueMedium.ttf") format("truetype"),url("fonts/HelveticaNeueMedium.otf") format("opentype")}
-  @font-face{font-family:"HNWeb";font-weight:400;font-style:normal;font-display:swap;src:local("HelveticaNeue-Roman"),local("HelveticaNeue"),local("Helvetica Neue"),url("fonts/HelveticaNeueRoman.woff2") format("woff2"),url("fonts/HelveticaNeueRoman.ttf") format("truetype"),url("fonts/HelveticaNeueRoman.otf") format("opentype")}
-  @font-face{font-family:"HNWeb";font-weight:700;font-style:normal;font-display:swap;src:local("HelveticaNeue-Bold"),local("Helvetica Neue Bold"),url("fonts/HelveticaNeueBold.woff2") format("woff2"),url("fonts/HelveticaNeueBold.ttf") format("truetype"),url("fonts/HelveticaNeueBold.otf") format("opentype")}
+  @font-face{font-family:"CreatoDisplay";font-weight:100;font-style:normal;font-display:swap;src:url("fonts/CreatoDisplay-Thin.otf") format("opentype")}
+  @font-face{font-family:"CreatoDisplay";font-weight:300;font-style:normal;font-display:swap;src:url("fonts/CreatoDisplay-Light.otf") format("opentype")}
+  @font-face{font-family:"CreatoDisplay";font-weight:500;font-style:normal;font-display:swap;src:url("fonts/CreatoDisplay-Medium.otf") format("opentype")}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
   body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.7 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.02em}
@@ -34,7 +33,7 @@
   nav a::after{content:attr(data-t);font-weight:500;height:0;visibility:hidden;overflow:hidden;pointer-events:none}
   nav a:hover,nav a:focus-visible{font-weight:500;text-decoration:none}
   nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-  nav a{color:inherit;text-decoration:none;font-family:"HNWeb","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:100}
+  nav a{color:inherit;text-decoration:none;font-family:"CreatoDisplay","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:300}
   .bar{position:sticky;top:0;z-index:50;background:#000;color:#f2f0eb}
   nav{padding-top:.6rem;padding-bottom:.6rem}
   @media(max-width:480px){nav{gap:.25rem 1rem}nav .name{font-size:1.3rem}nav ul{gap:.9rem;font-size:.95rem}}
@@ -48,8 +47,8 @@
   .portrait{aspect-ratio:3/4;width:100%;object-fit:cover;background:var(--line)}
   .facts{list-style:none;padding:0;margin:1.5rem 0;color:var(--muted)}
   .facts li{padding:.35rem 0;border-bottom:1px solid var(--line)}
-  em.t{font-family:"HNWeb","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:700}
-  .bio{font-family:"HNWeb","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:400;text-align:justify;hyphens:none;-webkit-hyphens:none}
+  em.t{font-family:"CreatoDisplay","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:300}
+  .bio{font-family:"CreatoDisplay","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:100;text-align:justify;hyphens:none;-webkit-hyphens:none}
 
   /* Photos */
   .grid{display:grid;gap:.5rem;grid-template-columns:repeat(3,1fr)}
@@ -69,7 +68,8 @@
 
   /* Contact */
   .contact p{margin:.25rem 0}
-  .contact p,footer{font-family:"HNWeb","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200}
+  .contact p{font-family:"CreatoDisplay","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300}
+  footer{font-family:"HNWeb","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200}
   footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
 </style>
 </head>
@@ -90,7 +90,7 @@
   <div class="video">
     <div>
       
-      <iframe src="https://www.youtube-nocookie.com/embed/wvySgvreuRg" title="YouTube video player" frameborder="0"
+      <iframe src="https://www.youtube-nocookie.com/embed/wvySgvreuRg?controls=0&amp;rel=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;playsinline=1" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
@@ -104,9 +104,10 @@
       <div>
         <h1 style="font-size:clamp(3rem,7vw,4.6rem);margin-bottom:1rem">Marvin Mariano</h1>
         <div class="bio">
-          <p><em class="t">Marvin Mariano</em> est amené à la poésie par la culture hip-hop, au travers de laquelle il découvre à la fois les grands auteurs et les schémas de rimes. Il entre au <em class="t">Conservatoire Royal de Mons</em> en 2005. Au fil de son parcours, il opte pour des seuls en scène orientés vers le public, avec lequel il aime créer un rapport privilégié. Dès sa sortie du Conservatoire, il crée <em class="t">Le Printemps du monde</em> de Pablo Neruda.</p>
-          <p>Il joue également dans <em class="t">Le 20 novembre</em> de Lars Norén, <em class="t">Un certain Plume</em> d'Henri Michaux, <em class="t">Ridiculum vitae</em> de Jean-Pierre Verheggen, <em class="t">Le Joueur d'échecs</em> de Stefan Zweig, <em class="t">Cyrano de Bergerac</em> d'Edmond Rostand, <em class="t">La Serva Amorosa</em> de Carlo Goldoni, ou encore, dans <em class="t">Le Bourgeois gentilhomme</em> de Molière.</p>
-          <p>Il danse dans <em class="t">Le Coq d'Or</em> de Rimski-Korsakov à <em class="t">La Monnaie</em> et au <em class="t">Teatro Real de Madrid</em>, ainsi que dans le <em class="t">Boléro</em> de Maurice Béjart, à <em class="t">Forest National</em>. Il tourne également dans divers clips et courts métrages.</p>
+          <p>Marvin Mariano est amené à la poésie par la culture hip-hop, au travers de laquelle il découvre à la fois les grands auteurs et les schémas de rimes. Il entre au Conservatoire Royal de Mons en 2005. Au fil de son parcours, il opte pour des seuls en scène orientés vers le public, avec lequel il aime créer un rapport privilégié. Dès sa sortie du Conservatoire, il crée <em class="t">Le Printemps du monde</em> de Pablo Neruda.</p>
+          <p>Il joue également dans <em class="t">Le 20 novembre</em> de Lars Norén, <em class="t">Un certain Plume</em> d'Henri Michaux, <em class="t">Ridiculum vitae</em> de Jean-Pierre Verheggen, <em class="t">Le Joueur d'échecs</em> de Stefan Zweig, <em class="t">Cyrano de Bergerac</em> d'Edmond Rostand, <em class="t">La Serva Amorosa</em> de Carlo Goldoni, ou encore, dans <em class="t">Le Bourgeois gentilhomme</em> de Molière, <em class="t">Le Temps est une invention des blancs</em>, d’Olivier Coyette au <em class="t">Théâtre de Poche</em>, etc. Il joue également pour les <em class="t">Metteurs en pièces</em> et pour la <em class="t">Cie Debout sur la chaise</em>.</p>
+          <p>Il danse dans <em class="t">Le Coq d'Or</em> de Rimski-Korsakov à <em class="t">La Monnaie</em> et au <em class="t">Teatro Real de Madrid</em>, ainsi que dans le <em class="t">Boléro</em> de Maurice Béjart, à Forest National. Il tourne également dans divers clips et courts métrages.</p>
+          <p>Il donne également des Workshops autour des poésie de Pablo Neruda à la <em class="t">Casa Anisio Teixeira</em> (Bahia, Brésil) ainsi que des Ateliers de prises de paroles en public à l’<em class="t">Université Libre de Bruxelles</em>.</p>
           <p>Ces dernières années, il co-réalise diverses créations vidéo avec <em class="t">Robby Pepe</em>, dont le documentaire <em class="t">Meeting Mike</em>, dédiées aux boxeurs de la région du Centre, lors de la venue de <em class="t">Mike Tyson</em> à La Louvière.</p>
           <p>Il est aujourd'hui également professeur au <em class="t">Conservatoire de La Louvière</em>.</p>
         </div>
